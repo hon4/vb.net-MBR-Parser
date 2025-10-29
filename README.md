@@ -34,7 +34,17 @@ End If
 ```
 
 ## Functions List
-...
+Note: To use the functions you must first initialize the parser.
+Example:
+```
+Dim parser As New MBRParser(sector)
+```
+where the sector is a byte array with an exact length of 512 bytes.
+
+
+| Function    | Parameters      | Example               | Notes                         |
+|-------------|-----------------|-----------------------|-------------------------------|
+| `GetByteAt` | index As UInt16 | `parser.GetByteAt(4)` | index Parameter must be 0-511 |
 
 ## Requirements
 - .NET Framework 2.0 or newer.
