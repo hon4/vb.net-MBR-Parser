@@ -5,6 +5,7 @@ A MBR (Master Boot Record) parser for Visual Basic .NET (vb.net).
 - When initializing class, the MBR Sector must be sent as a `Byte() ` array and must be exactly 512 bytes in size.
 - Some MBR values, like `Disk Serial Number`, `Active Partition Flag`, `File System ID`, and `Boot Signature`, can be used as `Byte` or `Byte()` arrays and as hexadecimal `String`s by adding `AsHexStr` at the end of each function name.
 - To simply check if the MBR is bootable, use the special function `GetIsMBRBootable()`, which returns a `Boolean` value of True if it is bootable and can be used in conditional statements.
+- In partition-related functions, the parameter `Partition_0to3` must be between 0 and 3 (0 = 1st partition, 1 = 2nd partition, 2 = 3rd partition, 3 = 4th partition), as the MBR supports up to 4 partitions.
 
 ## Installation
 Just place this file (`MBRParser.vb`) into your Visual Basic .NET project.
