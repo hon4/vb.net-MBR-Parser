@@ -1,5 +1,5 @@
 # MBR Parser for Visual Basic
-A MBR (Master Boot Record) parser.
+A MBR (Master Boot Record) parser for Visual Basic .NET (vb.net).
 
 ## General Notes
 - When initializing class, the MBR Sector must be sent as a `Byte() ` array and must be exactly 512 bytes in size.
